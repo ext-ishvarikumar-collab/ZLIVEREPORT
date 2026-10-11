@@ -1,15 +1,3 @@
-Bilkul samjha, bhai! Aapki puri calculation aur filtering logic update kar di gayi hai:
-
-1. **📊 Status Wise Summary:** Calculation ke waqt `REDISTRIBUTION` status/data ko bilkul **exclude (skip)** kar diya gaya hai.
-2. **🗺️ Zone Wise Summary:** `REDISTRIBUTION` aur `BATCH` dono waale data ko **0% sum/calculate** kiya gaya hai.
-3. **⏱ Hourly IPP Performance (Picker Wise Heatmap):** `REDISTRIBUTION` aur `BATCH` dono waale items ko poori tarah se **exclude** kar diya gaya hai.
-4. **Local Storage Memory (Object Map Key):** Aapka exact `window.masterPicklistMap` overwrite-safe logic bina kisi badlaav ke intact hai.
-
----
-
-### 💻 Complete Updated Script (Copy & Run in DevTools Console)
-
-```javascript
 (() => {
     console.log("🚀 Excluded REDISTRIBUTION & BATCH Filters Applied Strictly on Overwrite Map Store!");
 
@@ -992,5 +980,3 @@ Bilkul samjha, bhai! Aapki puri calculation aur filtering logic update kar di ga
     window.liveTableObserver.observe(targetNode, { childList: true, subtree: true });
     console.log("🚀 Fit-to-Text Ultra-Vibrant Glassmorphism Dashboard Rendered!");
 })();
-
-```
